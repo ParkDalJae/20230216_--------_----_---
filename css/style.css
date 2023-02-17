@@ -117,7 +117,8 @@
   width: 8px;
   height: 14px;
   left: 188px;
-  top: 824px;
+  top: 524px;
+  font-family: serif;
   color: #2196F3;
   transform: rotate(90deg);
 }
@@ -144,6 +145,7 @@
 .m-l>p:nth-child(4){top: 262px;}
 .m-l>p:nth-child(5){top: 342px;}
 .m-r{
+  /* 메인-우측-부분 */
   position: absolute;
   width: 1299px;
   height: 857px;
@@ -152,10 +154,10 @@
   background-color: #2196F3;
 }
 .m-r-p{
-  /* 메인-우측폰트 위치 관련(공통) */
+  /* 메인-우측-글자 위치(공통) */
   position: absolute;
   height: 130px;
-  /* 메인-우측폰트관련 */
+  /* 메인-우측-글자-폰트관련 */
   font-family: 'Karantina', cursive;
   font-style: normal;
   font-weight: 400;
@@ -163,10 +165,21 @@
   line-height: 130px;
   color: #FFFFFF;
 }
-/* 메인-우측 폰트 위치관련(top속성) */
+/* 메인-우측-글자 위치 */
 .m-r>p:nth-child(1){left:1039px; top: 414px;}
 .m-r>p:nth-child(2){left:1005px; top: 524px;}
 .m-r>p:nth-child(3){left: 937px; top: 632px;}
+/* 메인-우측 작은 화살표 */
+.m-r-a{
+  display: none;           /* 데스크탑은 비활성 */
+  position: absolute;
+  width: 35px;
+  height: 61px;
+  left: 368px;
+  top: 1806px;
+  
+  color: #FFFFFF;
+}
 .m-r-d{
   /* 메인-우측 흰 줄 */
   position: absolute;
@@ -218,36 +231,46 @@
 /*----------------- 태블릿 버전 -----------------*/
 @media (min-width:431px) and (max-width: 1024px) {
   .tot{
+    /* 프레임 전체 */
     width: 1024px;
     height: 1164px;
     overflow: auto;
   }
   .header{
+    /* 헤더부분 */
     width: 1024px;
   }
   .h-u{
+    /* 헤더-윗줄 부분 */
     width: 1024px;
   }
   .h-u-p{
+    /* 헤더-윗줄-글자위치 */
     left: 395px;
     top: 66px;
   }
   .h-d{
+    /* 헤더-아랫줄 부분 */
     width: 1024px;
   }
+  /* 헤더-아랫줄-글자-위치 */
   .h-d>p:nth-child(1){  top:  40px;}
   .h-d>p:nth-child(2){  top:  61px;}
   .h-d>p:nth-child(3){  top:  82px;}
   .h-d>p:nth-child(4){  top: 103px;}
   .h-d>p:nth-child(5){  top: 124px;}
   .h-d>p:nth-child(6){  top: 145px;}
+
   .main{
+    /* 메인부분 */
     width: 1024px;
     flex-direction: column;
   }
   .m-l{
+    /* 메인-좌측부분 */
     width: 1024px;
   }
+  /* 메인-좌측-글자위치-부분 */
   .m-l>p:nth-child(1){top:  86px;}
   .m-l>p:nth-child(2){top: 165px;}
   .m-l>p:nth-child(3){top: 244px;}
@@ -255,39 +278,60 @@
   .m-l>p:nth-child(5){top: 404px;}
 
   .m-l-a{
+    /* 메인-좌측-화살표 */
     top: 586px;
     left: 196px;
   }
   .m-l-a2{
+    /* 메인-좌측-작은글자 */
     top: 624px;
     left: 60px;
   }
   .m-r{
+    /* 메인-우측부분 */
     width: 1024px;
     height: 1368px;
     top: 1164px;
-    left:0px;
+    left: 0px;
   }
-  .m-r>p:nth-child(1){left:60px;top:507px;}
-  .m-r>p:nth-child(2){left:60px;top:620px;}
-  .m-r>p:nth-child(3){left:60px;top:731px;}
+  /* 메인-우측-글자 위치 조절 */
+  .m-r>p:nth-child(1){left:60px; top:507px;}
+  .m-r>p:nth-child(2){left:60px; top:620px;}
+  .m-r>p:nth-child(3){left:60px; top:731px;}
+  /* 메인-우측-작은화살표 위치 */
+  .m-r-a{
+    display:flex;           /* 데스크탑은 비활성 */
+    position: absolute;
+    width: 35px;
+    height: 130px;
+    left: 368px;
+    top: 610px;
+    font-family: serif;
+    font-weight: 900;
+    font-size: 130px;
+  }
   .m-r-d{
+    /* 메인-우측-줄 */
     width: 890px;
     left: 66px;
     top: 870px;
   }
   .footer{
+    /* 푸터 */
     width: 1024px;
     top:2532px;
   }
   .f-d{
+    /* 푸터-줄 */
     width:890px;
     top: 85px;
     left: 66px;
   }
   .f-p{
+    /* 푸터-글자 */
     left: 66px;
   }
+  /* 푸터-글자-위치 */
   .footer>p:nth-child(1){top:  97px;}
   .footer>p:nth-child(2){top: 109px;}
   .footer>p:nth-child(3){top: 121px;}
@@ -297,27 +341,32 @@
 /*----------------- 모바일 버전 -----------------*/
 @media (max-width : 430px) {
   .tot{
+    /* 프레임 전체 */
     width : 430px;
     height : 932px;
     overflow : hidden;
   }
   .header{
+    /* 헤더 위치 */
     width : 430px;
     height : 110px;
   }
   .h-u{
+    /* 헤더-윗줄 위치 */
     width : 430px;
     height : 110px;
   }
   .h-u-p{
+    /* 헤더-윗줄 글자 위치 */
     left : 98px;
     top : 68px;
   }
   .h-d{
-    display : none;    /* 모바일버전시 헤더-아랫줄 안보임 */
+    /* 모바일버전시 헤더-아랫줄 안보임 */
+    display : none;    
     width : 430px;
   }
-  /* 모바일 버전시 h-d 부분 div 안보임 */
+  /* 모바일 버전시 헤더-아랫줄 부분 div 안보임 */
   /* .h-d>p:nth-child(1){  top:  40px;}
   .h-d>p:nth-child(2){  top:  61px;}
   .h-d>p:nth-child(3){  top:  82px;}
@@ -332,7 +381,7 @@
     flex-direction : column;
   }
   .m-l{
-    /* 데스크탑의 메인좌측 부분->모바일의 메인 상단 */
+    /* 데스크탑의 메인좌측->모바일의 메인 상단 */
     top: 0px;
     width : 430px;
     height : 822px;
@@ -343,42 +392,63 @@
   .m-l>p:nth-child(3){top: 325px;}
   .m-l>p:nth-child(4){top: 378px;}
   .m-l>p:nth-child(5){top: 431px;}
+  
   .m-l-a{
+    /* 모바일-메인-상단 작은 화살표 */
     top: 640px;
     left: 208px;
   }
   .m-l-a2{
+    /* 모바일-메인-상단 작은 글자 */
     top: 707px;
     left: 73px;
   }
-
+  
   .m-r{
-    /* 데스크탑의 메인 우측 부분 */
+    /* 데스크탑의 메인-우측->모바일-메인-하단 */
     width : 430px;
     height : 732px;
     top : 822px;
     left : 0px;
   }
+  /* 모바일-메인-하단-글자 위치 */
   .m-r>p:nth-child(1){left:19px;top:231px;}
   .m-r>p:nth-child(2){left:19px;top:344px;}
   .m-r>p:nth-child(3){left:19px;top:455px;}
+   /* 메인-우측-작은화살표 위치 */
+  .m-r-a{
+    display:flex;           /* 데스크탑은 비활성 */
+    position: absolute;
+    width: 35px;
+    height: 130px;
+    left: 310px;
+    top: 360px;
+    font-family: serif;
+    font-weight: 900;
+    font-size: 80px;
+  }
   .m-r-d{
+    /* 모바일-메인-하단 줄 */
     width : 280px;
     left : 25px;
     top : 581px;
   }
   .footer{
+    /* 푸터 */
     width : 430px;
     top : 1664px;
   }
   .f-d{
+    /* 푸터-줄 */
     width:430px;
     top: 82px;
     left: 43px;
   }
   .f-p{
+    /* 푸터-글자-위치-공통 */
     left: 43px;
   }
+  /* 푸터-글자-위치-조절 */
   .footer>p:nth-child(1){top:  94px;}
   .footer>p:nth-child(2){top: 106px;}
   .footer>p:nth-child(3){top: 118px;}
