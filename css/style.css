@@ -127,7 +127,7 @@
   width: 285px;
   height: 30px;
   left: 38px;
-  top: 862px;
+  top: 562px;
 /* 메인-좌측 작은글씨 폰트 */
   font-family: 'Inter';
   font-style: normal;
@@ -196,7 +196,7 @@
 
   background: #D9D9D9;
 }
-.footer>p{
+.f-p{
   /* 푸터-글자 위치(공통) */
   position: absolute;
   height: 10px;
@@ -253,6 +253,15 @@
   .m-l>p:nth-child(3){top: 244px;}
   .m-l>p:nth-child(4){top: 324px;}
   .m-l>p:nth-child(5){top: 404px;}
+
+  .m-l-a{
+    top: 586px;
+    left: 196px;
+  }
+  .m-l-a2{
+    top: 624px;
+    left: 60px;
+  }
   .m-r{
     width: 1024px;
     height: 1368px;
@@ -274,6 +283,10 @@
   .f-d{
     width:890px;
     top: 85px;
+    left: 66px;
+  }
+  .f-p{
+    left: 66px;
   }
   .footer>p:nth-child(1){top:  97px;}
   .footer>p:nth-child(2){top: 109px;}
@@ -286,7 +299,7 @@
   .tot{
     width : 430px;
     height : 932px;
-    overflow : auto;
+    overflow : hidden;
   }
   .header{
     width : 430px;
@@ -297,8 +310,8 @@
     height : 110px;
   }
   .h-u-p{
-    left : 395px;
-    top : 66px;
+    left : 98px;
+    top : 68px;
   }
   .h-d{
     display : none;    /* 모바일버전시 헤더-아랫줄 안보임 */
@@ -320,16 +333,24 @@
   }
   .m-l{
     /* 데스크탑의 메인좌측 부분->모바일의 메인 상단 */
-    top: 110px;
+    top: 0px;
     width : 430px;
     height : 822px;
   }
   /* 모바일-메인-상단 글자 위치 */
-  .m-l>p:nth-child(1){top:  86px;}
-  .m-l>p:nth-child(2){top: 165px;}
-  .m-l>p:nth-child(3){top: 244px;}
-  .m-l>p:nth-child(4){top: 324px;}
-  .m-l>p:nth-child(5){top: 404px;}
+  .m-l>p:nth-child(1){top: 219px;}
+  .m-l>p:nth-child(2){top: 272px;}
+  .m-l>p:nth-child(3){top: 325px;}
+  .m-l>p:nth-child(4){top: 378px;}
+  .m-l>p:nth-child(5){top: 431px;}
+  .m-l-a{
+    top: 640px;
+    left: 208px;
+  }
+  .m-l-a2{
+    top: 707px;
+    left: 73px;
+  }
 
   .m-r{
     /* 데스크탑의 메인 우측 부분 */
@@ -338,13 +359,13 @@
     top : 822px;
     left : 0px;
   }
-  .m-r>p:nth-child(1){left:60px;top:507px;}
-  .m-r>p:nth-child(2){left:60px;top:620px;}
-  .m-r>p:nth-child(3){left:60px;top:731px;}
+  .m-r>p:nth-child(1){left:19px;top:231px;}
+  .m-r>p:nth-child(2){left:19px;top:344px;}
+  .m-r>p:nth-child(3){left:19px;top:455px;}
   .m-r-d{
-    width : 430px;
-    left : 66px;
-    top : 870px;
+    width : 280px;
+    left : 25px;
+    top : 581px;
   }
   .footer{
     width : 430px;
@@ -352,10 +373,14 @@
   }
   .f-d{
     width:430px;
-    top: 85px;
+    top: 82px;
+    left: 43px;
   }
-  .footer>p:nth-child(1){top:  97px;}
-  .footer>p:nth-child(2){top: 109px;}
-  .footer>p:nth-child(3){top: 121px;}
-  .footer>p:nth-child(4){top: 133px;}
+  .f-p{
+    left: 43px;
+  }
+  .footer>p:nth-child(1){top:  94px;}
+  .footer>p:nth-child(2){top: 106px;}
+  .footer>p:nth-child(3){top: 118px;}
+  .footer>p:nth-child(4){top: 130px;}
 }
